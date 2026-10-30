@@ -1,0 +1,103 @@
+:root {
+  --back-ground: #1B2F33;
+  --text-color: #FDFBA5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--back-ground);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+}
+
+h1 {
+  text-align: center;
+  margin: 50px;
+  font-size: 50px;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  height: 100px;
+  background-color: var(--text-color);
+  color: var(--back-ground);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-card {
+  min-height: 120px;
+  padding: 16px;
+  background-color: var(--text-color);
+  color: var(--back-ground);
+  border-radius: 10px;
+}
+
+.typing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.p1 {
+  font-size: 35px;
+}
+
+#type-area {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid var(--text-color);
+  border-radius: 15px;
+  background-color: var(--back-ground);
+  color: var(--text-color);
+  resize: none;
+  font-family: inherit;
+}
+
+#reset-btn {
+  padding: 10px 20px;
+  border: 2px solid var(--text-color);
+  border-radius: 10px;
+  background-color: var(--text-color);
+  color: var(--back-ground);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#reset-btn:hover {
+  background-color: var(--back-ground);
+  color: var(--text-color);
+}
+
+.correct {
+  color: rgb(0, 125, 0);
+}
+
+.wrong {
+  color: rgb(125, 0, 0);
+}

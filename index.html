@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Typing Speed Test</h1>
+
+    <div class="container">
+        <div class="cards">
+            <div class="card">
+                <p class="p2">Time</p>
+                <p class="p1" id="time">0s</p>
+            </div>
+            <div class="card">
+                <p class="p2">WPM</p>
+                <p class="p1" id="wpm">0</p>
+            </div>
+            <div class="card">
+                <p class="p2">Accuracy</p>
+                <p class="p1" id="accuracy">0%</p>
+            </div>
+        </div>
+
+        <div class="main-card" id="main-card"></div>
+
+        <div class="typing">
+            <textarea id="type-area" placeholder="Start Typing Here..."></textarea>
+            <button type="button" id="reset-btn">Restart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
